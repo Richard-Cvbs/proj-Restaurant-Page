@@ -1,6 +1,3 @@
-import consoleInteract from './console';
-import module1 from ".htmlstruc.js"
+import component1 from './comp1';
 
-consoleInteract()
-
-document.body.appendChild(module1.firstdiv())
+component1.createElementTree()

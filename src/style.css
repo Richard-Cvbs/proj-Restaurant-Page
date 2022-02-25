@@ -3,6 +3,9 @@ html{
     padding: 0;
     margin: 0;
 }
+h2{
+    margin: 0;
+}
 body{
     background: #d982004d;
     display: flex;
@@ -41,7 +44,7 @@ body{
     position: absolute;
     top: 22vh;
     left: 81vw;
-    height: 40vh;
+    height: 30vh;
 }
 .header-title {
     height: 100%;
@@ -80,4 +83,45 @@ body{
 }
 .nav-button:active{
     color: #1F2937;
+}
+.content{
+    display: flex;
+    align-items: center;
+}
+.content-textContainer{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: -5vw;
+    gap: 1rem;
+}
+.content-cooking{
+    padding: 1rem;
+    height: 93%;
+}
+.content-title{
+  font-size: 3rem;
+}
+.content-cookImg{
+    position: absolute;
+    left: 83vw;
+    bottom: 3vh;
+    height: 25vh;
+}
+
+.content-listItem{
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 0.05em;
+    color: #FFF174;
+    bottom: 1rem;
+    line-height: 2;
+}
+.content-footer{
+    font-size: 3rem;
+    letter-spacing: 0.05em;
+    color: #FFA41D;
+    padding-left: 10vw;
 }

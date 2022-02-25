@@ -5,6 +5,9 @@ const content1 = function (){
         const content = document.querySelector(".content")
         content.appendChild(Element)
     }
+    const appendToContainer = function(Element,container){
+        container.appendChild(Element)
+    }
     const appendToContentUl = function (Element, ulElement){
         ulElement.appendChild(Element)
     }
@@ -43,16 +46,23 @@ const content1 = function (){
         appendToContentUl(listElement4,listCont)
         return listCont
     }
+    const createContainerElement = function (){
+        let newContainer = document.createElement('div')
+        newContainer.className = "content-textContainer"
+        return newContainer
+    }
     const createContent = function(){
         const cookingImg = createImg(cooking, "content-cooking")
+        const container = createContainerElement()
         const contentTitle = createTextElement('h2','content-title','Best food in town!')
         const contentUL = createContentUl()
         const contentFooter = createTextElement('div','content-footer','Wednesdays Drinks Are On Us!!!')
         const cookImg = createImg(svgvcook, 'content-cookImg')
+        appendToContainer(contentTitle,container)
+        appendToContainer(contentUL,container)
+        appendToContainer(contentFooter,container)
         appendToContent(cookingImg)
-        appendToContent(contentTitle)
-        appendToContent(contentUL)
-        appendToContent(contentFooter)
+        appendToContent(container)
         appendToContent(cookImg)
         return
     }

@@ -10,6 +10,7 @@ const mainComponent = function (document) {
         const body = document.body
         body.appendChild(Element)
     }
+   
     const createElementTree = function(){
         const header = createMainElement("header","header")
         const nav = createMainElement("nav","nav")

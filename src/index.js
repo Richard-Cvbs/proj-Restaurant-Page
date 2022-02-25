@@ -1,4 +1,7 @@
-import component1 from './comp1';
+import mainComponent from './main_comp';
+import headerComp from './header';
+
 import './style.css';
 
-component1.createElementTree()
+mainComponent.createElementTree()
+headerComp.createHeader()

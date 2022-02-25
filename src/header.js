@@ -22,7 +22,7 @@ const createTextElement = function (TagNameString,cssClass,Text){
 const createHeader = function(){
     const icon = createImg(Restaurant_Icon,"header-icon")
     const lobster = createImg(sgvlobster,"header-lobster")
-    const Title = createTextElement("h1","header-title","Really Nice Place & Lobster")
+    const Title = createTextElement("h1","header-title","Really Nice Place \n&\n Lobster")
     const CornerText = createTextElement("div","header-cornerText","Restaurant")
     appendToHeader(icon)
     appendToHeader(lobster)

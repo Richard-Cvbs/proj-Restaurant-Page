@@ -1,2 +1,2 @@
 # proj-Restaurant-Page
-dinamically generated website created with webpack
+Static website created from a Figma blueprint
